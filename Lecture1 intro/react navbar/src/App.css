@@ -1,0 +1,23 @@
+.navbardiv{
+  display:flex;
+  justify-content: space-around;
+  background-color: black;
+  color:white;
+  align-items: center;
+}
+.button{
+  background-color: blue;
+  color:white;
+  font-size: 15px;
+  border-radius: 8px;
+  height:40px;
+  width:80px;
+}
+.linkmaindiv{
+  display:flex;
+  
+}
+.linkmaindiv>div{
+  padding-left: 40px;
+  
+}

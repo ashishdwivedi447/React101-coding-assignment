@@ -5,12 +5,13 @@ const Todo = () => {
 
     const [todo,setTodo]=useState([]);
     const [values,setValues]=useState("");
+    const [page,setPage]=useState(1)
 
     useEffect(()=>{
-        fetch("http://localhost:8080/todos?_page=1&_limit=4 ")
+        fetch(`http://localhost:8080/todos?_page=${page}&_limit= 3`)
         .then((r)=>r.json())
         .then((data)=>setTodo(data));
-    },[])
+    },[page])
     const save=()=>{
         
  fetch("http://localhost:8080/todos ",
@@ -21,7 +22,7 @@ const Todo = () => {
      },
      body:JSON.stringify({
         
-        task: values,
+        title: values,
         status: false
       })
  }
@@ -47,8 +48,15 @@ const Todo = () => {
 
   
       {todo.map((e)=>(
-     <div key={e.id}>{e.task}</div>
+     <div key={e.id}>{e.title}</div>
       ))}
+
+      <button onClick={()=>{
+          setPage(page-1)
+      }}>prev</button>
+      <button onClick={()=>{
+          setPage(page+1)
+      }}>next</button>
   
 
 

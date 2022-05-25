@@ -1,0 +1,67 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "task": "play cricket",
+      "status": false
+    },
+    {
+      "id": 2,
+      "task": "Get placed",
+      "status": false
+    },
+    {
+      "id": 3,
+      "task": "cook food",
+      "status": false
+    },
+    {
+      "id": 4,
+      "task": "shop clothes",
+      "status": false
+    },
+    {
+      "id": 5,
+      "task": "sing a song",
+      "status": false
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "task": "ram",
+      "status": false,
+      "id": 12
+    },
+    {
+      "task": "shyam",
+      "status": false,
+      "id": 13
+    },
+    {
+      "task": "sheela",
+      "status": false,
+      "id": 14
+    },
+    {
+      "task": "leela",
+      "status": false,
+      "id": 15
+    }
+  ]
+}
